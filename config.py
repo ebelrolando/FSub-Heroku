@@ -22,4 +22,5 @@ class Messages():
         "[👨‍💻](https://telegra.ph/file/f2b08ba94ebd139d9da96.jpg) **DEVELOPED BY @AmineSoukara**"
       ]
 
-      START_MSG = "**Hey! [👋](https://i.imgur.com/SmqQApH.jpg) [{}](tg://user?id={})**\n\n● I Can Force Members To Join A Specific Channel Before Writing Messages In The Group.\n● Learn More At 👉 /help"
+      START_MSG = "**Hola! [👋](https://t.meanuncios_cu) [{}](tg://user?id={})*\n\n●**Para  poder escribir en los grupos debes estar suscrito a nuestro Canal Directorio de Anuncios en Cuba.*👉@Anuncios_cu.",
+
