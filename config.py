@@ -11,4 +11,4 @@ class Config(object):
 
 class Messages():
 
-	START_MSG = "**Hola! [👋](https://t.me/joinchat/pbY-xTXjcrozMGFh) [{}](tg://user?id={})**\n\n● 📣🍔 𝗔𝗻𝘂𝗻𝗰𝗶𝗼𝘀: 𝗡𝗲𝗴𝗼𝗰𝗶𝗼𝘀 𝘆 𝗩𝗲𝗻𝘁𝗮𝘀 🍹📣**\n\n ¿Ya te uniste al directorio más completo de Anuncios de Negocios,**Ventas y Servicios?."
+	START_MSG = "**Hola! [👋](https://t.me/joinchat/pbY-xTXjcrozMGFh) [{}](tg://user?id={})**\n\n● 📣🍔 𝗔𝗻𝘂𝗻𝗰𝗶𝗼𝘀: 𝗡𝗲𝗴𝗼𝗰𝗶𝗼𝘀 𝘆 𝗩𝗲𝗻𝘁𝗮𝘀 🍹📣\n\n ¿Ya te uniste al directorio más completo de Anuncios de Negocios, Ventas y Servicios?.**"
