@@ -27,7 +27,7 @@ def _onUnMuteRequest(client, cb):
           except UserNotParticipant:
             client.answer_callback_query(cb.id, text="❗ Únase al 'canal @Anuncios_cu y presione el botón nuevamente.", show_alert=True)
       else:
-        client.answer_callback_query(cb.id, text="❗ You are muted by admins for other reasons.", show_alert=True)
+        client.answer_callback_query(cb.id, text="❗ Estás silenciado por otras  razones.", show_alert=True)
     else:
       if not client.get_chat_member(chat_id, (client.get_me()).id).status == 'administrator':
         client.send_message(chat_id, f"❗ **{cb.from_user.mention} está tratando de desactivar el silencio a sí mismo, pero no puedo hacerlo porque no soy un administrador en este chat, agrégueme como administrador de nuevo.**\n__#Leaving this chat...__")
@@ -50,7 +50,7 @@ def _check_member(client, message):
       except UserNotParticipant:
         try:
           sent_message = message.reply_text(
-              "Hola {}, espera, **No estás suscrito** a nuestro Canal Directorio de\n [📣🍔 𝗔𝗻𝘂𝗻𝗰𝗶𝗼𝘀: 𝗡𝗲𝗴𝗼𝗰𝗶𝗼𝘀 𝘆 𝗩𝗲𝗻𝘁𝗮𝘀 🍹📣](https://t.me/Anuncios_cu).\n\n•➤@Anuncios_cu\n\n  •➤@Anuncios_cu\n\n   •➤@Anuncios_cu\n Cuando lo estés pulsa sobre el botón de abajo.".format(message.from_user.mention, channel, channel),
+              "Hola {}, **espera**, No estás suscrito a nuestro Canal Directorio de\n [📣🍔 𝗔𝗻𝘂𝗻𝗰𝗶𝗼𝘀: 𝗡𝗲𝗴𝗼𝗰𝗶𝗼𝘀 𝘆 𝗩𝗲𝗻𝘁𝗮𝘀 🍹📣](https://t.me/Anuncios_cu).\n\n  •➤@Anuncios_cu\n\    •➤@Anuncios_cu\n\      •➤@Anuncios_cu\n**Si vives en Cuba éste es tu canal, te será de mucha ayuda.**\n︾ _Luego pulsa el botón de abajo_ ︾.".format(message.from_user.mention, channel, channel),
               disable_web_page_preview=True,
               reply_markup=InlineKeyboardMarkup(
                   [[InlineKeyboardButton("🔔 Ya estoy en el canal ✅", callback_data="onUnMuteRequest")]]
@@ -90,7 +90,7 @@ def fsub(client, message):
         try:
           client.get_chat_member(input_str, "me")
           sql.add_channel(chat_id, input_str)
-          message.reply_text(f"✅ **El bot está habilitado**\n__Todos los mimbros del grupo tendrán que estar suscrito a: [channel](https://t.me/{input_str}) para poder enviar mensajes al grupo.__", disable_web_page_preview=True)
+          message.reply_text(f"✅ **El bot está habilitado**\n__Todos los mimbros del grupo tendrán que estar suscrito a [Anuncios_cu](https://t.me/{input_str}) para poder enviar mensajes al grupo.__", disable_web_page_preview=True)
         except UserNotParticipant:
           message.reply_text(f"❗ **No soy administrador en el canal.**\n__Añádeme a [channel](https://t.me/{input_str}). Y otórgame todos los permisos.__", disable_web_page_preview=True)
         except (UsernameNotOccupied, PeerIdInvalid):
